@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript">
+        var redirectUri = "{{ redirect_url }}";
+        setTimeout(function() {
+            window.location = redirectUri;
+        }, redirectTimeoutMs);
+    </script>
+</body>
+</html>
