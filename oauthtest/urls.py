@@ -17,5 +17,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^oauthtest/', include('authorization_code_example.urls')),
+    url(r'^oauthtest/authorization_code/', include('authorization_code_example.urls')),
+    url(r'^oauthtest/implicit/', include('implicit_example.urls')),
+    url(r'^oauthtest/client_credentials_example/', include('client_credentials_example.urls')),
 ]

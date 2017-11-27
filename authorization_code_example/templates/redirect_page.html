@@ -3,9 +3,7 @@
 <body>
     <script type="text/javascript">
         var redirectUri = "{{ redirect_url }}";
-        setTimeout(function() {
-            window.location = redirectUri;
-        }, redirectTimeoutMs);
+        window.location = redirectUri;
     </script>
 </body>
 </html>
